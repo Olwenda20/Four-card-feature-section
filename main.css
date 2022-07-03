@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+}
+
+
+/*+++++++ Body ++++++++*/
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: hsl(0, 0%, 98%);
+}
+
+/*+++++++++ Images +++++++++*/
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.head_note{
+  /*text-align: center;*/
+  padding: 0 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.head_note h1{
+  font-size: 1.5rem;
+  font-family: 'poppins', sans-serif;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-align: start;
+  text-transform: none;
+}
+
+.head_note h1:nth-child(2){
+  font-weight: 700;
+}
+
+.head_note p{
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 200;
+}
+/*========= CONTAINER =========*/
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card{
+  position: relative;
+  padding: 2rem;
+  width: 18rem;
+  box-shadow: 4px 4px 15px hsl(229, 6%, 80%);
+  border-radius: 0.3rem;
+  background: white;
+}
+
+.card img{
+  width: 3rem;
+  bottom: 1.5rem;
+  right: 1rem;
+  position: absolute;
+}
+
+/*===== mini_container =====*/
+.mini_container{
+  margin: 0 2rem;
+}
+.mini_container .card{
+  margin-bottom: 2rem;
+}
+
+
+h1{
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'poppins', sans-serif;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+
+p{
+  font-size: 15px;
+  font-family: 'poppins', sans-serif;
+  line-height: 1.5rem;
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 4rem;
+}
+
+.supervisor{
+  border-top: 2px solid hsl(180, 62%, 55%);
+}
+
+.calculator{
+  border-top: 2px solid hsl(212, 86%, 64%);
+}
+
+.team_builder{
+  border-top: 2px solid hsl(0, 78%, 62%);
+}
+
+.karma{
+  border-top: 2px solid hsl(34, 97%, 64%);
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+}
+
+.attribution a { 
+      color: hsl(228, 45%, 44%); 
+}
+
+/*======== RESPONSIVENESS ========*/
+@media (max-width: 375px){
+  body{
+    padding: 50rem 0;
+  }
+  
+ .head_note{
+   padding: 0;
+ }
+ 
+.head_note, 
+.card{
+  width: 20rem;
+}
+  
+  .container{
+    flex-direction: column;
+  }
+  
+ .supervisor{
+   margin-bottom: 2rem;
+ }
+}
